@@ -1,7 +1,8 @@
-package com.android.gb.tmdbinfo
+package com.android.gb.tmdbinfo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.android.gb.tmdbinfo.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
