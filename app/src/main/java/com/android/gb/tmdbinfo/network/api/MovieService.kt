@@ -8,6 +8,7 @@ interface MovieService {
 
     @GET("/movie/top_rated")
     suspend fun getFilmTopRated(
-        @Query("language") language: String
+        @Query("language") language: String,
+        @Query("page") page: Int
     ): MoviesList
 }
