@@ -6,7 +6,7 @@ import retrofit2.http.Query
 
 interface MovieService {
 
-    @GET("/movie/top_rated")
+    @GET("top_rated")
     suspend fun getFilmTopRated(
         @Query("language") language: String,
         @Query("page") page: Int

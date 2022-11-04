@@ -16,7 +16,7 @@ class MoviePagingSource(
 ) : PagingSource<Int, Movie>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Movie> {
         val position = params.key ?: STARTING_PAGE_INDEX
-        val response = service.getFilmTopRated(query, position)
+         val response = service.getFilmTopRated(query, position)
         val repos = response.results
         return try {
             val nextKey = if (repos.isEmpty()) {

@@ -15,8 +15,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    private const val BASE_URL = "https://api.themoviedb.org/3"
-    private const val TOKEN ="274f828ad283bd634ef4fc1ee4af255f"
+    private const val BASE_URL = "https://api.themoviedb.org/3/movie/"
+    private const val TOKEN = "274f828ad283bd634ef4fc1ee4af255f"
 
 
     @Provides
